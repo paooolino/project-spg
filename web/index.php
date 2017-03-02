@@ -18,7 +18,6 @@
 	);
 	
 	$item = $api->get_node_by_slug($request_slug);
-	$tpl = file_get_contents("templates/" . $item->template);
 	
-	echo $tpl;
+	require __DIR__ . '/templates/' . $item->template . ".php";
 	

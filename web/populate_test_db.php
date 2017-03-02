@@ -2,20 +2,23 @@
 $nodes = array(
 	array(
 		"name" => "Homepage",
-		"slug" => ""
+		"slug" => "",
+		"template" => "home"
 	),
 	array(
 		"name" => "About",
-		"slug" => "about/"
+		"slug" => "about/",
+		"template" => "about"
 	),
 	array(
 		"name" => "Admin",
-		"slug" => "admin/"
+		"slug" => "admin/",
+		"template" => "admin"
 	),
 	array(
 		"name" => "Admin console",
 		"slug" => "admin/console/",
-		"template" => "adminconsole.html"
+		"template" => "adminconsole"
 	)
 );
 

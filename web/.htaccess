@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /project-spg/web/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /project-spg/web/index.php [L]

@@ -20,5 +20,8 @@
   "homepage": "https://github.com/paooolino/project-spg#readme",
   "devDependencies": {
     "opn": "^4.0.2"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
   }
 }

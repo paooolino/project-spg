@@ -1,0 +1,20 @@
+{
+  "name": "web",
+  "homepage": "https://github.com/paooolino/project-spg",
+  "authors": [
+    "paooolino <paooolino@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

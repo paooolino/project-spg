@@ -26,4 +26,13 @@ web/populate_test_db.php
 API console
 ============
 http://127.0.0.1/project-spg/web/admin/console/
-	
+
+Testing
+========
+tests are in: test/API_spec.js
+to test: caspet test test/API_spec.js
+
+Functional tests are made with casperjs.
+https://www.helpscout.net/blog/functional-testing-casperjs/
+
+

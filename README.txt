@@ -1,5 +1,10 @@
+before you start
+=================
+Have Wamp installed for apache/php and a local mysql server.
+
 start the project
-	npm run open
+==================
+npm run open
 
 configuration
 ==============
@@ -29,8 +34,9 @@ http://127.0.0.1/project-spg/web/admin/console/
 
 Testing
 ========
+npm test
+
 tests are in: test/API_spec.js
-to test: caspet test test/API_spec.js
 
 Functional tests are made with casperjs.
 https://www.helpscout.net/blog/functional-testing-casperjs/

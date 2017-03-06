@@ -23,6 +23,8 @@ $nodes = array(
 );
 
 R::wipe('nodes');
+R::wipe('players');
+R::wipe('teams');
 
 foreach ($nodes as $node) {
 	$bean = R::dispense('nodes');

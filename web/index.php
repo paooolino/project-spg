@@ -18,9 +18,9 @@
 	);
 	
 	$item = $api->get_node_by_slug($request_slug);
-	
+
 	// tags
 	$base_url = dirname("//" . $_SERVER["SERVER_NAME"] . $_SERVER["PHP_SELF"]) . "/";
-	
+
 	require __DIR__ . '/templates/' . $item->template . ".php";
 	

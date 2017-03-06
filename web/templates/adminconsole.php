@@ -16,26 +16,37 @@
 		<div id="header">
 			Commands 
 			<select>
+				<option value="">- select -</option>
 				<option
-					data-command="get_node_by_slug"
+					data-command="getNodeBySlug"
 					data-params="slug"
 				>Get node by slug</option>
 				<option
-					data-command="add_player"
+					data-command="addPlayer"
 					data-params="name surname country"
 				>Add player</option>
+				<option
+					data-command="addTeam"
+					data-params="teamname country"
+				>Add team</option>
 			</select>
 		</div>
 		<div id="commandline">
-			<input id="#commandline" /><button id="issue">send</button>
+			<input /><button id="issue">send</button>
 		</div>
 		<div id="console">
 		</div>
 	</div>
 	<script src="<?php echo $base_url; ?>bower_components/jquery/dist/jquery.min.js"></script>
 	<script>
+		$('select').on('change', function() {
+			var $option = $(this).find('option:selected');
+			var command = $option.data('command');
+			var params = $option.data('params');
+			$('#commandline input').val(command + ' ' + params);
+		});
 		$('#issue').on('click', function() {
-			issue_command($('#commandline').val());
+			issue_command($('#commandline input').val());
 		});
 		function issue_command(s) {
 			$.ajax({
